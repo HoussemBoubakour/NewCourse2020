@@ -162,7 +162,7 @@ console.log(houssem.getSummary());
 
 //console.log(calcAge(houssem['year']));
 
-*/
+
 
 
 // Coding Challenge 03
@@ -207,4 +207,16 @@ const john = {
     }
     
 
+
+
+
+// loops
+
+for (let rep = 1; rep <= 10; rep++){
+
+    console.log(`Lifting weights repetition ${rep}`);
+
+}
+
+*/
 
