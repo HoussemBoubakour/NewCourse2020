@@ -218,5 +218,93 @@ for (let rep = 1; rep <= 10; rep++){
 
 }
 
+
+
+// Loop backwards
+
+const houssem = [
+    'Houssem',
+    'BOUBAKOUR',
+     1994,
+    'Student',
+    ['Joe', 'Bob', 'Vivian']
+    
+];
+
+for (let i = houssem.length-1; i>=0 ; i--){
+    console.log(i, houssem[i]);
+};
+
+// loop in a loop
+
+for(let exercice = 1; exercice <=3; exercice++ ){
+    console.log(`-------- Starting exercice ${exercice}`);
+
+    for(let repetition = 1; repetition <=5; repetition++){
+        console.log(`Exercice ${exercice}: Lifting weight repitition ${repetition}`);
+    }
+}
+
+
+
+// While loop
+
+let rep =1;
+while (rep <= 10){
+    console.log(`Lifting weight repitition ${rep}`);
+    rep++;
+} 
+
+
+let dice = Math.trunc (Math.random()*6) + 1;
+
+while (dice!==6){
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc (Math.random()*6) + 1;
+
+    if(dice === 6) console.log (`The loop is about to end...`);
+}
+
+
+
+// Coding challenge 04
+
+//1
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+
+//2
+const tips = []; 
+const total = [];
+
+//3
+const calcTip = (bill) => {
+    let tip;
+    if (bill >= 50 && bill <= 200){
+        tip = bill*0.15;
+    }else{
+        tip = bill*0.2;
+    }
+    return tip;
+} 
+
+for(let i = 0; i <= bills.length-1; i++){
+    tips.push(calcTip(bills[i]));
+}
+
+for(let i = 0; i<=bills.length-1; i++){
+    total.push(bills[i]+tips[i]);
+}
+
+console.log(bills, tips, total);
+
+const calcAverage = (arr)=>{
+    let sum = 0;
+    for (let i = 0; i<= arr.length-1; i++){
+        sum = sum + arr[i];
+    }
+    return sum / arr.length;
+}         
+
+console.log(calcAverage(bills),calcAverage(tips),calcAverage(total));
 */
 
