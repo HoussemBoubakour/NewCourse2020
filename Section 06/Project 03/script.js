@@ -81,14 +81,7 @@ btnHold.addEventListener("click", function () {
       score[activePlayer];
     //score0El.textContent = score[0];
     //score1El.textContent = score[1];
-
-    if (score[activePlayer]>=100) {
-      namePlayer0.textContent = 'WINNER';
-      document.querySelector(`.player--${activePlayer}`.classList.add('player--winner');
-      endGame();
-    }
-
-    /*if (score[0] >= 10) {
+    if (score[0] >= 10) {
       namePlayer0.textContent = "WINNER!";
       player0El.classList.add("player--winner");
       endGame();
@@ -99,7 +92,7 @@ btnHold.addEventListener("click", function () {
     } else {
       switchPlayer();
     }
-  }*/
+  }
 });
 
 btnNew.addEventListener("click", function () {
