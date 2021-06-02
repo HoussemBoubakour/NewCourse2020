@@ -10,6 +10,7 @@ const jessica = {
   firstName: "Jessica",
   lastName: "Williams",
   age: 27,
+  family: ["Alice", "Bob"],
 };
 
 const marriedJessica = jessica;
@@ -19,5 +20,8 @@ console.log("After marriage:", marriedJessica);
 
 const jessicaCopy = Object.assign({}, jessica);
 jessicaCopy.lastName = "Williams";
+jessicaCopy.family.push("John");
+jessicaCopy.family.push("Mary");
+
 console.log("Before marriage:", jessica);
 console.log("After marriage:", jessicaCopy);
